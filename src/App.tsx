@@ -1,7 +1,6 @@
 import React, {useState, useEffect, lazy, Suspense} from 'react';
 import Nav from './components/Nav';
 import Content from './components/Content';
-import Footer from './components/Footer';
 import PreLoader from './components/PreLoader';
 
 const Firefly = lazy(() => import ("./components/Firefly"))
@@ -31,15 +30,15 @@ const App: React.FC = () => {
   }
   
   return (
-    <div className="">
+    <div className="flex flex-col h-screen justify-between">
       <Nav theme={mode} toggleTheme={toggleTheme} />
       <Suspense fallback={<PreLoader />}>
         <Firefly theme={mode} />
         <div className="flex justify-center w-full pt-[64px]">
           <Content />
         </div>
-        <Footer />
       </Suspense>
+    	<footer className="text-center text-sm dark:text-white">&copy; {(new Date).getFullYear()} <a href="/">Aung Koko Lwin</a>.</footer>
     </div>
   )
 }
