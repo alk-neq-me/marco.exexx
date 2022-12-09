@@ -16,7 +16,7 @@ const Content: React.FC = () => {
 	// 	setShowForm(false)
 	// }
 	
-	return <div className="w-full max-w-lg">
+	return <div className="w-full max-w-lg p-4">
     <div className="flex flex-row items-center pb-10 mt-4 justify-between p-2">
 			<div>
         <img className="w-24 h-24 mb-3 rounded-full shadow-lg object-cover" src="/assets/me.jpg" alt="Bonnie image"/>
