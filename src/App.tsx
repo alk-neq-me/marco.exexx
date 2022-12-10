@@ -37,8 +37,8 @@ const App: React.FC = () => {
         <div className="flex justify-center w-full pt-[64px]">
           <Content />
         </div>
+      	<footer className="text-center text-sm dark:text-white">&copy; {(new Date).getFullYear()} <a href="/">Aung Koko Lwin</a>.</footer>
       </Suspense>
-    	<footer className="text-center text-sm dark:text-white">&copy; {(new Date).getFullYear()} <a href="/">Aung Koko Lwin</a>.</footer>
     </div>
   )
 }
