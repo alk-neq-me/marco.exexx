@@ -2,6 +2,7 @@ import React, {useState, useEffect, lazy, Suspense} from 'react';
 import Nav from './components/Nav';
 import Content from './components/Content';
 import PreLoader from './components/PreLoader';
+import {motion} from 'framer-motion';
 
 const Firefly = lazy(() => import ("./components/Firefly"))
 
@@ -34,9 +35,14 @@ const App: React.FC = () => {
       <Nav theme={mode} toggleTheme={toggleTheme} />
       <Suspense fallback={<PreLoader />}>
         <Firefly theme={mode} />
-        <div className="flex justify-center w-full pt-[64px]">
+        <motion.div 
+          initial={{y:10, opacity:0}}
+          animate={{y:0, opacity:1}}
+          transition={{duration: 0.8, delay: 0.1}}
+          className="flex justify-center w-full pt-[68px]"
+        >
           <Content />
-        </div>
+        </motion.div>
       	<footer className="text-center text-sm dark:text-white">&copy; {(new Date).getFullYear()} <a href="/">Aung Koko Lwin</a>.</footer>
       </Suspense>
     </div>
