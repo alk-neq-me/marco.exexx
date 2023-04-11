@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Marco</h1>
+<h1 align="center">Hi 👋, I'm Aung Koko Lwin (Marco)</h1>
 <h3 align="center">A passionate full-stack developer from Myanmar.</h3>
 
 - 🌱 I’m currently learning **tRPC, solidity, smart contracts, Shopify**
