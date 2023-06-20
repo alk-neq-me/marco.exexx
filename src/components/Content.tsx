@@ -1,21 +1,6 @@
 import React from 'react';
-// import {Modal, Button, Label, TextInput, Textarea} from 'flowbite-react';
 
 const Content: React.FC = () => {
-	// const [showForm, setShowForm] = useState<boolean>(false);
-	
-	// const onOpen = () => {
-	// 	setShowForm(true);
-	// }
-	
-	// const onClose = () => {
-	// 	setShowForm(false);
-	// }
-	
-	// const handleSubmit = () => {
-	// 	setShowForm(false)
-	// }
-	
 	return <div className="w-full max-w-lg p-4">
     <div className="flex flex-row items-center pb-10 mt-4 justify-between p-2">
 			<div>
@@ -25,16 +10,8 @@ const Content: React.FC = () => {
         <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Aung Koko Lwin</h5>
         <span className="text-sm text-gray-500 dark:text-gray-400">Full Stack Developer</span>
         <span className="text-xs text-gray-700 dark:text-gray-400">
-					<a href="http://instagram.com/_u/marco.exexx" className="hover:underline" target="_blank">@marco.exexx</a>
+					<a href="https://marcoexexx-portfolio.vercel.app/" className="underline" target="_blank">portfolio</a>
 				</span>
-				{/*
-				<Button 
-					onClick={onOpen}
-					className="mt-3 bg-purple-500 hover:bg-purple-700"
-				>
-					Contact
-				</Button>
-				*/}
 			</div>
     </div>
 		
@@ -44,83 +21,6 @@ const Content: React.FC = () => {
 				Hey! I'm <a href="http://instagram.com/_u/marco.exexx" className="hover:underline" target="_blank">Aung Koko Lwin</a>. I enjoy building dynamic, creative products from start to finish. Focused on developing intuitive experiences that constantly grow and improve based on user metrics. Always shipping.
 			</p>
 		</div>
-		
-		{/*
-		<Modal
-			show={showForm}
-			size="md"
-			popup={true}
-			onClose={onClose}
-		>
-			<Modal.Header />
-			<Modal.Body>
-				<div className="space-y-6 px-6 pb-4 sm:pb-6 lg:px-8 xl:pb-8">
-	        <h3 className="text-xl font-medium text-gray-900 dark:text-white">
-						Get In Touch
-	        </h3>
-	        <div>
-	          <div className="mb-2 block">
-	            <Label
-	              htmlFor="name"
-	              value="Your name"
-	            />
-	          </div>
-	          <TextInput
-	            id="name"
-	            placeholder="bob"
-	            required={true}
-	          />
-	        </div>
-	        <div>
-	          <div className="mb-2 block">
-	            <Label
-	              htmlFor="email"
-	              value="Your email"
-	            />
-	          </div>
-	          <TextInput
-	            id="email"
-	            placeholder="name@company.com"
-	            required={true}
-	          />
-	        </div>
-	        <div>
-	          <div className="mb-2 block">
-	            <Label
-	              htmlFor="subject"
-	              value="Your subject"
-	            />
-	          </div>
-	          <TextInput
-	            id="subject"
-	            placeholder="Subject"
-	            required={true}
-	          />
-	        </div>
-	        <div>
-	          <div className="mb-2 block">
-	            <Label
-	              htmlFor="message"
-	              value="Your message"
-	            />
-	          </div>
-	          <Textarea
-	            id="message"
-	            placeholder="Message"
-	            required={true}
-							rows={4}
-	          />
-	        </div>
-
-	        <div className="w-full">
-	          <Button onClick={handleSubmit} className="dark:bg-purple-500 dark:hover:bg-purple-700">
-							Submit
-	          </Button>
-	        </div>
-	      </div>
-			</Modal.Body>
-		</Modal>
-		*/}
 		
 		<div className="dark:text-white mb-10">
 			<p className="text-lg font-bold mb-2 hover:underline hover:decoration-4 hover:decoration-gray-700">Bio</p>
@@ -155,18 +55,20 @@ const Content: React.FC = () => {
 		
 		<div className="dark:text-white mb-10">
 			<p className="text-lg font-bold mb-2 hover:underline hover:decoration-4 hover:decoration-gray-700">Links</p>
-			<div className="flex flex-col text-sm mb-1">
-				<p className="text-md dark:text-gray-400">Github</p>
-				<a href="https://github.com/alk-neq-me" target="_blank">@alk-neq-me</a>
-			</div>
-			<div className="flex flex-col text-sm mb-1">
-				<p className="text-md dark:text-gray-400">Instagram</p>
-				<a href="https://www.instagram.com/marco.exexx/" target="_blank">@marco.exexx</a>
-			</div>
-			<div className="flex flex-col text-sm">
-				<p className="text-md dark:text-gray-400">Facebook</p>
-				<a href="https://facebook.com/stanley.yuuto" target="_blank">@stanley.yuuto</a>
-			</div>
+      <div className='flex flex-col gap-[4px]'>
+        <div className="flex flex-col text-sm mb-1">
+          <p className="font-medium text-md dark:text-gray-400 cursor-default">Github</p>
+          <a href="https://github.com/alk-neq-me" target="_blank">@alk-neq-me</a>
+        </div>
+        <div className="flex flex-col mb-1 text-sm">
+          <p className="font-medium dark:text-gray-400 cursor-default">Instagram</p>
+          <a href="https://www.instagram.com/marco.exexx/" target="_blank">@marco.exexx</a>
+        </div>
+        <div className="flex flex-col text-sm">
+          <p className="font-medium dark:text-gray-400 cursor-default">Facebook</p>
+          <a href="https://facebook.com/marco.exexx" target="_blank">@marco.exexx</a>
+        </div>
+      </div>
 		</div>
 	</div>
 }
